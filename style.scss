@@ -315,13 +315,24 @@ nav {
 .manager {
     background-color: #f4f4f4;
     padding: 60px 50px;
-   
+
+    .title h4 {
+        font-size: 2.5em;;
+        color:#f36e21;
+    }
     .content-ctr {
         display: flex;
     }
     .text-ctr {
         color:rgb(102, 102, 102);
-        width:45%
+        width:45%;
+
+        p {
+            color:rgb(102, 102, 102);
+        }
+        ul{
+            padding-left: 15px;
+        }
     }
     .img-ctr {
         width:45%;
@@ -330,6 +341,28 @@ nav {
 
 }
 
+/**************
+   SEC CENTRE
+**************/
+
+.sec-center {
+
+    h4 {
+        font-size: 2.5em;
+        color:#f36e21;
+    }
+    
+    .video-ctr {
+        text-align: center;
+        
+        .frame-ctr{
+            width: 100%;
+        }
+        .sec-video {
+            height:100%;
+        }
+    }
+}
 
 
 /**************
@@ -338,6 +371,7 @@ nav {
 .demo {
     height:75vh !important;
     padding: 60px 0;
+    //margin-bottom: 100px;
 }
 .demo-ctr{
     //height:75vh !important;
@@ -358,9 +392,10 @@ nav {
         width: 33%;
     }
     .demo-txt-ctr{
-        
         margin-top: 40px;
-
+        h4 {
+            font-size: 2.5em;
+        }
         p{
             margin-top: 30px;
         }
@@ -398,12 +433,50 @@ nav {
 }
 
 .trust {
-    padding: 60px 50px;
+    margin: 200px 0 60px 0;
 
     .trust-ctr{
-        border: 1px solid;
+        margin-top:50px;
+        padding: 30px;
+        box-shadow: 0px 0px 6px rgba(16, 16, 16, 0.1);
+        border-radius: 4px;
         display:flex;
+        transition: .2s ease-in-out;
+    }
+    .trust-ctr:hover{
+        transform: translateY(-10px);
+        box-shadow: 0px 4px 15px #10101040;
+    }
 
+    .ctr-txt {
+        width:55%;
+        
+        h4 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #f36e21;
+        }
+
+        p{
+            color:rgb(102, 102, 102);
+        }
+
+        .btn {
+            margin-top: 2.5em;
+        }
+    }
+
+    .ctr-img {
+        width: 40%;
+        text-align: center;
+
+        .certs {
+            width: 100%;
+        }
+
+        .lab {
+
+        }
     }
 }
 
