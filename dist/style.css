@@ -342,6 +342,111 @@ p {
   color: #666666;
 }
 
+.trust {
+  padding: 60px 50px;
+}
+.trust .trust-ctr {
+  border: 1px solid;
+  display: flex;
+}
+
 footer {
   background-color: black;
+  width: 100%;
+  color: white;
+  padding: 60px 30px 0 30px;
+}
+footer .ft-ctr {
+  padding: 10px;
+  padding-left: auto;
+  padding-right: auto;
+}
+footer .ft-ctr .ft-top {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #525252;
+}
+footer .top-ctr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .top-ctr h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+footer .top-ctr ul {
+  list-style: none;
+}
+footer .top-ctr ul li {
+  margin-bottom: 10px;
+}
+footer .top-ctr ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .top-ctr p {
+  font-size: 11px;
+}
+footer .top-ctr .top-lft {
+  width: 65%;
+  display: flex;
+}
+footer .top-ctr .top-lft .top-menu {
+  width: 50%;
+}
+footer .top-ctr .top-rt {
+  width: 35%;
+}
+footer .top-ctr .top-rt .rt-content {
+  margin-left: auto;
+}
+footer .top-ctr .top-rt form {
+  width: 100%;
+}
+footer .top-ctr .top-rt input {
+  border-radius: 2px;
+  font-size: 15px;
+}
+footer .top-ctr .top-rt .form-inp {
+  padding: 5px 62px 5px 6px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+footer .top-ctr .top-rt .form-btn {
+  background-color: #f36e21;
+  padding: 5px 20px;
+  margin: -2px;
+  border: 2px solid #f36e21;
+  color: black;
+  cursor: pointer;
+}
+footer .top-ctr .top-rt .social {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .top-ctr .top-rt .social .icon-ctr {
+  padding: 5px;
+}
+footer .top-ctr .top-rt .social .icon-ctr img {
+  width: 25px;
+}
+footer .btm-ctr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .btm-ctr p {
+  font-size: 12px;
+  color: #acacac;
+}
+footer .btm-ctr a {
+  color: white;
+  font-size: 15px;
+  font-weight: 530;
+  text-decoration: none;
+  padding-left: 20px;
 }

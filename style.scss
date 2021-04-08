@@ -397,9 +397,129 @@ nav {
     }
 }
 
+.trust {
+    padding: 60px 50px;
 
+    .trust-ctr{
+        border: 1px solid;
+        display:flex;
+
+    }
+}
 
 footer {
     background-color: black;
-    //height: 100vh;
+    width: 100%;
+    color:white;
+    padding: 60px 30px 0 30px;
+
+    .ft-ctr {
+        padding: 10px;
+        padding-left: auto;
+        padding-right: auto;
+        .ft-top{
+            padding-bottom: 25px;
+            border-bottom: 1px solid #525252;
+        }
+    }
+
+    .top-ctr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        h6 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style: none;
+            li {
+                margin-bottom: 10px;
+                a{
+                    text-decoration: none;
+                    color:white;
+                }
+            }
+        }
+
+        p {
+            font-size: 11px;
+        }
+
+        .top-lft{
+            width:65%;
+            display:flex;
+            .top-menu {
+                width:50%
+            }
+        }
+
+        .top-rt {
+            width:35%;
+
+            .rt-content {
+                margin-left:auto;
+            }
+
+            form {
+                width: 100%;
+            }
+            input {
+                border-radius: 2px;
+                font-size: 15px;
+            }
+            .form-inp{
+                padding:5px 62px 5px 6px;
+                background-color: black;
+                border: 2px solid white;
+                color: white;
+            }
+            .form-btn {
+                background-color: #f36e21;
+                padding:5px 20px;
+                margin:-2px;
+                border: 2px solid #f36e21;
+                color: black;
+                cursor:pointer;
+            }
+            .social {
+                width:100%;
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .icon-ctr {
+                    padding: 5px;
+                    a {
+                        //background-color: #fff;
+                    }
+                    img {
+                        width:25px;
+                        //ackground-color:white;
+                    }
+                }
+            }
+        }
+    }
+
+    .btm-ctr {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            font-size: 12px;
+            color: #acacac;
+        }
+
+        a{
+            color:white;
+            font-size:15px;
+            font-weight: 530;
+            text-decoration: none;
+            padding-left:20px;
+        }
+    }
 }
