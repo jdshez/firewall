@@ -375,6 +375,7 @@ nav {
     h4 {
         font-size: 2.5em;
         color:#f36e21;
+        padding-bottom: 20px;
     }
     p {
         margin-left: auto;
@@ -514,7 +515,7 @@ nav {
 
 .trust {
     margin: 0px 0 60px 0;
-
+    padding-top: 0;
     .trust-ctr{
         margin-top:0px;
         padding: 0px 30px 30px 30px;
@@ -674,6 +675,151 @@ footer {
             font-weight: 530;
             text-decoration: none;
             padding-left:20px;
+        }
+    }
+}
+
+/*****************
+     CONTACT 
+*****************/
+
+.contact-heading{
+    width: 100%;
+    margin-top: 100px;
+    background-color: #999999;
+    background-image: url("https://d3ik27cqx8s5ub.cloudfront.net/bt/img/SonicWall-Shape-grey.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: top left;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    .hd-ctr{
+        width: 80%;
+
+        h4{
+            font-size: 45px;
+            color: #f36e21;
+            margin-bottom: 1%;
+        }
+        .sub-head{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.4;
+            color: rgb(102, 102, 102);
+        }
+    }
+    
+}
+
+.main-ct{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    form {
+        width: 65%;
+        padding-right: 20px;
+        margin-right: 2em;
+            ul {
+                display:flex;
+                flex-wrap: wrap;
+                list-style: none;
+                
+                li {
+                    font-size: 16px;
+
+                    label {
+                        display:block;
+                        margin: 5px 0;
+                        color:rgb(102, 102, 102);
+                    }
+    
+                    input {
+                        padding:8px 6px;
+                        width: 100%;
+                        border: 1px solid #f36e21;
+                        border-radius: 4px;
+                    }
+                }
+
+                .email{
+                    width: 100%;
+                }
+                .fname {
+                    width: 48%;
+                    margin-right: 4%;
+                }
+                .lname{
+                    width: 48%;
+                }
+                .country {
+                    width: 48%;
+                    margin-right: 4%;
+                }
+                .pcode {
+                    width: 48%;
+                }
+                .company {
+                    width: 48%;
+                    margin-right: 4%;
+                }
+                .phone {
+                    width: 48%;
+                }
+                .comment {
+                    width: 100%;
+                    textarea{
+                        width: 100%;
+                        resize: none;
+                        border: 1px solid #f36e21;
+                        border-radius: 4px;
+                    }
+                }
+            }
+
+            .btn-ctr{
+                text-align: center;
+                margin-top: 20px;
+                .btn{
+                    background-color: #fff;
+                }
+                .btn:hover {
+                    background-color: #f36e21;
+                }
+            }
+    }
+
+    .icons {
+        width:20%;
+
+        ul {
+            list-style: none;
+            li{
+                display: flex;
+
+            }
+            .icon {
+                width:30px;
+                padding:10px;
+                background-color: #f4f4f4;
+                border: 2px solid #f36e21;
+                border-radius: 100%;
+            }
+            h5{
+                color: #f36e21;
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            p{
+                color:rgb(102, 102, 102);
+            }
         }
     }
 }

@@ -329,6 +329,7 @@ p {
 .sec-center h4 {
   font-size: 2.5em;
   color: #f36e21;
+  padding-bottom: 20px;
 }
 .sec-center p {
   margin-left: auto;
@@ -444,6 +445,7 @@ p {
 *************/
 .trust {
   margin: 0px 0 60px 0;
+  padding-top: 0;
 }
 .trust .trust-ctr {
   margin-top: 0px;
@@ -578,4 +580,135 @@ footer .btm-ctr a {
   font-weight: 530;
   text-decoration: none;
   padding-left: 20px;
+}
+
+/*****************
+     CONTACT 
+*****************/
+.contact-heading {
+  width: 100%;
+  margin-top: 100px;
+  background-color: #999999;
+  background-image: url("https://d3ik27cqx8s5ub.cloudfront.net/bt/img/SonicWall-Shape-grey.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: top left;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.contact-heading .hd-ctr {
+  width: 80%;
+}
+.contact-heading .hd-ctr h4 {
+  font-size: 45px;
+  color: #f36e21;
+  margin-bottom: 1%;
+}
+.contact-heading .hd-ctr .sub-head {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #666666;
+}
+
+.main-ct {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-ct form {
+  width: 65%;
+  padding-right: 20px;
+  margin-right: 2em;
+}
+.main-ct form ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.main-ct form ul li {
+  font-size: 16px;
+}
+.main-ct form ul li label {
+  display: block;
+  margin: 5px 0;
+  color: #666666;
+}
+.main-ct form ul li input {
+  padding: 8px 6px;
+  width: 100%;
+  border: 1px solid #f36e21;
+  border-radius: 4px;
+}
+.main-ct form ul .email {
+  width: 100%;
+}
+.main-ct form ul .fname {
+  width: 48%;
+  margin-right: 4%;
+}
+.main-ct form ul .lname {
+  width: 48%;
+}
+.main-ct form ul .country {
+  width: 48%;
+  margin-right: 4%;
+}
+.main-ct form ul .pcode {
+  width: 48%;
+}
+.main-ct form ul .company {
+  width: 48%;
+  margin-right: 4%;
+}
+.main-ct form ul .phone {
+  width: 48%;
+}
+.main-ct form ul .comment {
+  width: 100%;
+}
+.main-ct form ul .comment textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid #f36e21;
+  border-radius: 4px;
+}
+.main-ct form .btn-ctr {
+  text-align: center;
+  margin-top: 20px;
+}
+.main-ct form .btn-ctr .btn {
+  background-color: #fff;
+}
+.main-ct form .btn-ctr .btn:hover {
+  background-color: #f36e21;
+}
+.main-ct .icons {
+  width: 20%;
+}
+.main-ct .icons ul {
+  list-style: none;
+}
+.main-ct .icons ul li {
+  display: flex;
+}
+.main-ct .icons ul .icon {
+  width: 30px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 2px solid #f36e21;
+  border-radius: 100%;
+}
+.main-ct .icons ul h5 {
+  color: #f36e21;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.main-ct .icons ul a {
+  text-decoration: none;
+}
+.main-ct .icons ul p {
+  color: #666666;
 }
