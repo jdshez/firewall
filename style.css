@@ -924,13 +924,18 @@ footer .btm-ctr a {
 /*********************
      LIVE DEMO
 *********************/
+.main-ctr {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
 .hd-ctr .ld-logo {
   margin: 0 15px -17px 0;
 }
 
 .ld-form {
-  width: 48%;
-  margin-right: 5%;
   font-weight: 500;
 }
 
@@ -939,7 +944,6 @@ footer .btm-ctr a {
 }
 
 .ld-options {
-  width: 42%;
   color: #666666;
   background-color: #f2f2f2;
   border-left: 1px solid #f36e21;
@@ -963,5 +967,22 @@ footer .btm-ctr a {
 
 .ld-options ul li::marker {
   color: #f36e21;
+}
+
+@media (min-width: 801px) {
+  .main-ct {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-ct .ld-options {
+    width: 47%;
+    margin-bottom: 30px;
+  }
+  .main-ct .ld-form {
+    width: 48%;
+    margin-right: 5%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -838,14 +838,17 @@ footer {
 /*********************
      LIVE DEMO
 *********************/
+.main-ctr {
+    flex-direction: column-reverse;
+}
 .hd-ctr {
     .ld-logo {
         margin: 0 15px -17px 0;
     } 
 }
 .ld-form {
-    width:48%;
-    margin-right: 5%;
+    //width:48%;
+    //margin-right: 5%;
     font-weight:500;
 
     .form-list input{
@@ -854,7 +857,7 @@ footer {
 }
 
 .ld-options {
-    width: 42%;
+    //width: 48%;
     color: rgb(102, 102, 102);
     background-color: #f2f2f2;
     border-left: 1px solid #f36e21;
@@ -871,6 +874,20 @@ footer {
         }
         li::marker {
             color: #f36e21;
+        }
+    }
+}
+
+@media (min-width: 801px) {
+    .main-ct {
+        flex-direction: row;
+        .ld-options {
+            width: 47%;
+            margin-bottom: 30px;
+        }
+        .ld-form {
+            width:48%;
+            margin-right: 5%;
         }
     }
 }
