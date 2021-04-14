@@ -792,20 +792,30 @@ footer {
     }
 
     .icons {
-        width:20%;
+        width:30%;
 
         ul {
             list-style: none;
+            margin-left: 10%;
+            //text-align:center;
             li{
                 display: flex;
-
+                margin-bottom: 10%;
             }
             .icon {
-                width:30px;
-                padding:10px;
-                background-color: #f4f4f4;
-                border: 2px solid #f36e21;
-                border-radius: 100%;
+                color:#f36e21;
+                margin-right: 20px;
+                //width:50px;
+                //padding:10px;
+                
+                i {
+                    color:#f36e21;
+                    font-size: 40px;
+                    padding: 20px;
+                    background-color: #f4f4f4;
+                    border: 2px solid #f36e21;
+                    border-radius: 100%;
+                }
             }
             h5{
                 color: #f36e21;
@@ -820,6 +830,47 @@ footer {
             p{
                 color:rgb(102, 102, 102);
             }
+        }
+    }
+}
+
+
+/*********************
+     LIVE DEMO
+*********************/
+.hd-ctr {
+    .ld-logo {
+        margin: 0 15px -17px 0;
+    } 
+}
+.ld-form {
+    width:48%;
+    margin-right: 5%;
+    font-weight:500;
+
+    .form-list input{
+        width: 100%;
+    }
+}
+
+.ld-options {
+    width: 42%;
+    color: rgb(102, 102, 102);
+    background-color: #f2f2f2;
+    border-left: 1px solid #f36e21;
+    padding: 20px;
+    font-size: 17px;
+    align-self: flex-start;
+    p{
+        color: rgb(102, 102, 102);
+    }
+    ul {
+        margin-left: 5%;
+        li {
+            margin-bottom: 3%;
+        }
+        li::marker {
+            color: #f36e21;
         }
     }
 }

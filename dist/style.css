@@ -686,17 +686,24 @@ footer .btm-ctr a {
   background-color: #f36e21;
 }
 .main-ct .icons {
-  width: 20%;
+  width: 30%;
 }
 .main-ct .icons ul {
   list-style: none;
+  margin-left: 10%;
 }
 .main-ct .icons ul li {
   display: flex;
+  margin-bottom: 10%;
 }
 .main-ct .icons ul .icon {
-  width: 30px;
-  padding: 10px;
+  color: #f36e21;
+  margin-right: 20px;
+}
+.main-ct .icons ul .icon i {
+  color: #f36e21;
+  font-size: 40px;
+  padding: 20px;
   background-color: #f4f4f4;
   border: 2px solid #f36e21;
   border-radius: 100%;
@@ -711,4 +718,42 @@ footer .btm-ctr a {
 }
 .main-ct .icons ul p {
   color: #666666;
+}
+
+/*********************
+     LIVE DEMO
+*********************/
+.hd-ctr .ld-logo {
+  margin: 0 15px -17px 0;
+}
+
+.ld-form {
+  width: 48%;
+  margin-right: 5%;
+  font-weight: 500;
+}
+.ld-form .form-list input {
+  width: 100%;
+}
+
+.ld-options {
+  width: 42%;
+  color: #666666;
+  background-color: #f2f2f2;
+  border-left: 1px solid #f36e21;
+  padding: 20px;
+  font-size: 17px;
+  align-self: flex-start;
+}
+.ld-options p {
+  color: #666666;
+}
+.ld-options ul {
+  margin-left: 5%;
+}
+.ld-options ul li {
+  margin-bottom: 3%;
+}
+.ld-options ul li::marker {
+  color: #f36e21;
 }
