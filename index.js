@@ -28,15 +28,18 @@ function closeNav() {
 
   let t1 = gsap.timeline({
       scrollTrigger: {
-          trigger: 'main',
+          trigger: '.virt-fw',
+          start: "top top"
       }
   });
 
-  t1.from(".h1", {
+  t1.from(".an-h4", {
       x:200,
-      transform: scale(10),
+      opacity:0,
       duration:1.5    
   })
+//transform: scale(10),
+
 
 /*
 function animations() {
