@@ -158,7 +158,8 @@ nav {
 .hero-ctr {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    //align-items: center;
+    justify-content: space-around;
     height:100vh;
     .hero {
         position: absolute;
@@ -176,7 +177,7 @@ nav {
 
 .text {
     position: relative;
-    padding:0 50px;
+    padding:0;
     margin-top: 90px;
     //z-index: 0;
 
@@ -226,6 +227,12 @@ nav {
     font-weight: 400;
     max-width: 700px;
     }
+
+@media (min-width: 601px) {
+    .text{
+    padding:0 50px;
+    }
+}
 
 @media (min-width: 991px) {
     .text {
@@ -283,6 +290,7 @@ nav {
         background-color: white;
         width: 80%;
         padding: 15px;
+        margin-top:20px;
         border-radius: 4px;
         box-shadow: 0px 0px 6px rgba(16,16,16,0.1);
         transition: .2s ease-in-out;
@@ -312,6 +320,7 @@ nav {
     @media (min-width: 991px) {
         .option-des {
             width: 22%;
+            margin-top:0;
         }
     } 
 }
@@ -350,9 +359,11 @@ nav {
     }
     .img-ctr {
         //width:45%;
+        padding-top:20px;
+        margin-bottom: -20px;
     }
 
-    @media (min-width: 991px) {
+    @media (min-width: 901px) {
         .content-ctr {
         flex-direction:row;
         }
@@ -371,6 +382,8 @@ nav {
 **************/
 
 .sec-center {
+    padding-bottom:0;
+    min-height: max-content;
     
     .text-ctr {
         text-align: center;
@@ -384,12 +397,12 @@ nav {
         margin-left: auto;
         margin-right: auto;
         color:rgb(102, 102, 102);
-        
+        margin-top: 30px;
     }
     .video-ctr {
         text-align: center;
         margin-bottom: 0px;
-        margin-top: 40px;
+        margin-top: 80px;
         /*
         padding: 0 auto;
 
@@ -420,8 +433,12 @@ nav {
 }
 
 @media (min-width: 991px) {
+    .sec-center{
+        padding-bottom:60px;
+    }
     .video-ctr {
         padding: 0 150px;
+        margin-top: 40px;
     }
 
     .sec-video{
@@ -434,8 +451,8 @@ nav {
      DEMO
 **************/
 .demo {
-    height:75vh !important;
-    padding: 60px 0 0 0;
+    min-height: max-content;
+    padding: 60px 0; 
     //margin-bottom: 100px;
 }
 .demo-ctr{
@@ -499,6 +516,9 @@ nav {
 }
 
 @media (min-width: 601px) {
+    .demo {
+        padding-top: 60px;
+    }
     .demo-ctr {
         flex-direction: row;
         background-size: 45%;
@@ -518,7 +538,7 @@ nav {
 *************/
 
 .trust {
-    margin: 0px 0 60px 0;
+    margin: 20px 0 60px 0;
     padding-top: 0;
     .trust-ctr{
         margin-top:0px;
@@ -526,6 +546,7 @@ nav {
         box-shadow: 0px 0px 6px rgba(16, 16, 16, 0.1);
         border-radius: 4px;
         display:flex;
+        flex-direction: column;
         transition: .2s ease-in-out;
     }
     .trust-ctr:hover{
@@ -534,8 +555,9 @@ nav {
     }
 
     .ctr-txt {
-        width:55%;
+       //width:55%;
         padding-top: 80px;
+        text-align: center;
         
         h4 {
             font-size: 2em;
@@ -553,17 +575,38 @@ nav {
     }
 
     .ctr-img {
-        width: 40%;
+        //width: 40%;
         text-align: center;
 
         .certs {
-            width: 100%;
+            width: 60%;
+            margin:15px 0;
         }
 
         .lab {
-
+            //width:80%;
         }
     }
+    @media (min-width: 801px) {
+        
+        margin-top:45px;
+        
+        .trust-ctr {
+            flex-direction:row;
+
+            .ctr-txt {
+                width: 55%;
+                text-align: left;
+            }
+            .ctr-img {
+                width: 40%;
+                .certs {
+                    width:100%;
+                }
+            }
+        }
+    } 
+
 }
 
 footer {
@@ -608,7 +651,7 @@ footer {
         }
 
         .top-lft{
-            width:65%;
+            width:100%;
             display:flex;
             .top-menu {
                 width:50%
@@ -616,8 +659,8 @@ footer {
         }
 
         .top-rt {
-            width:35%;
-
+            //width:35%;
+            margin-top: 20px;
             .rt-content {
                 margin-left:auto;
             }
@@ -630,7 +673,7 @@ footer {
                 font-size: 15px;
             }
             .form-inp{
-                padding:5px 62px 5px 6px;
+                padding:5px 32px 5px 6px;
                 background-color: black;
                 border: 2px solid white;
                 color: white;
@@ -680,6 +723,22 @@ footer {
             text-decoration: none;
             padding-left:20px;
         }
+    }
+
+    @media (min-width: 651px) {
+            .top-ctr {
+                flex-direction: row;
+                .top-lft{
+                    width:65%;
+                }
+                .top-rt{
+                    width: 35%;
+                    margin-top: 0;
+                    .form-inp{
+                        padding-right: 50px;
+                    }
+                }
+            }
     }
 }
 

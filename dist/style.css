@@ -144,7 +144,7 @@ nav .menu:hover {
 .hero-ctr {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100vh;
 }
 .hero-ctr .hero {
@@ -158,7 +158,7 @@ nav .menu:hover {
 
 .text {
   position: relative;
-  padding: 0 50px;
+  padding: 0;
   margin-top: 90px;
 }
 .text a {
@@ -206,6 +206,11 @@ p {
   max-width: 700px;
 }
 
+@media (min-width: 601px) {
+  .text {
+    padding: 0 50px;
+  }
+}
 @media (min-width: 991px) {
   .text {
     margin-top: 200px;
@@ -254,6 +259,7 @@ p {
   background-color: white;
   width: 80%;
   padding: 15px;
+  margin-top: 20px;
   border-radius: 4px;
   box-shadow: 0px 0px 6px rgba(16, 16, 16, 0.1);
   transition: 0.2s ease-in-out;
@@ -280,6 +286,7 @@ p {
 @media (min-width: 991px) {
   .options .option-des {
     width: 22%;
+    margin-top: 0;
   }
 }
 
@@ -309,7 +316,11 @@ p {
   padding-left: 15px;
   margin-bottom: 40px;
 }
-@media (min-width: 991px) {
+.manager .img-ctr {
+  padding-top: 20px;
+  margin-bottom: -20px;
+}
+@media (min-width: 901px) {
   .manager .content-ctr {
     flex-direction: row;
   }
@@ -324,6 +335,10 @@ p {
 /**************
    SEC CENTRE
 **************/
+.sec-center {
+  padding-bottom: 0;
+  min-height: max-content;
+}
 .sec-center .text-ctr {
   text-align: center;
 }
@@ -336,11 +351,12 @@ p {
   margin-left: auto;
   margin-right: auto;
   color: #666666;
+  margin-top: 30px;
 }
 .sec-center .video-ctr {
   text-align: center;
   margin-bottom: 0px;
-  margin-top: 40px;
+  margin-top: 80px;
   /*
   padding: 0 auto;
 
@@ -369,8 +385,13 @@ p {
   }
 }
 @media (min-width: 991px) {
+  .sec-center {
+    padding-bottom: 60px;
+  }
+
   .video-ctr {
     padding: 0 150px;
+    margin-top: 40px;
   }
 
   .sec-video {
@@ -381,8 +402,8 @@ p {
      DEMO
 **************/
 .demo {
-  height: 75vh !important;
-  padding: 60px 0 0 0;
+  min-height: max-content;
+  padding: 60px 0;
 }
 
 .demo-ctr {
@@ -435,6 +456,10 @@ p {
 }
 
 @media (min-width: 601px) {
+  .demo {
+    padding-top: 60px;
+  }
+
   .demo-ctr {
     flex-direction: row;
     background-size: 45%;
@@ -452,7 +477,7 @@ p {
     TRUST
 *************/
 .trust {
-  margin: 0px 0 60px 0;
+  margin: 20px 0 60px 0;
   padding-top: 0;
 }
 .trust .trust-ctr {
@@ -461,6 +486,7 @@ p {
   box-shadow: 0px 0px 6px rgba(16, 16, 16, 0.1);
   border-radius: 4px;
   display: flex;
+  flex-direction: column;
   transition: 0.2s ease-in-out;
 }
 .trust .trust-ctr:hover {
@@ -468,8 +494,8 @@ p {
   box-shadow: 0px 4px 15px #10101040;
 }
 .trust .ctr-txt {
-  width: 55%;
   padding-top: 80px;
+  text-align: center;
 }
 .trust .ctr-txt h4 {
   font-size: 2em;
@@ -483,12 +509,31 @@ p {
   margin-top: 2.5em;
 }
 .trust .ctr-img {
-  width: 40%;
   text-align: center;
 }
 .trust .ctr-img .certs {
-  width: 100%;
+  width: 60%;
+  margin: 15px 0;
 }
+@media (min-width: 801px) {
+  .trust {
+    margin-top: 45px;
+  }
+  .trust .trust-ctr {
+    flex-direction: row;
+  }
+  .trust .trust-ctr .ctr-txt {
+    width: 55%;
+    text-align: left;
+  }
+  .trust .trust-ctr .ctr-img {
+    width: 40%;
+  }
+  .trust .trust-ctr .ctr-img .certs {
+    width: 100%;
+  }
+}
+
 footer {
   background-color: black;
   width: 100%;
@@ -528,14 +573,14 @@ footer .top-ctr p {
   font-size: 11px;
 }
 footer .top-ctr .top-lft {
-  width: 65%;
+  width: 100%;
   display: flex;
 }
 footer .top-ctr .top-lft .top-menu {
   width: 50%;
 }
 footer .top-ctr .top-rt {
-  width: 35%;
+  margin-top: 20px;
 }
 footer .top-ctr .top-rt .rt-content {
   margin-left: auto;
@@ -548,7 +593,7 @@ footer .top-ctr .top-rt input {
   font-size: 15px;
 }
 footer .top-ctr .top-rt .form-inp {
-  padding: 5px 62px 5px 6px;
+  padding: 5px 32px 5px 6px;
   background-color: black;
   border: 2px solid white;
   color: white;
@@ -588,6 +633,21 @@ footer .btm-ctr a {
   font-weight: 530;
   text-decoration: none;
   padding-left: 20px;
+}
+@media (min-width: 651px) {
+  footer .top-ctr {
+    flex-direction: row;
+  }
+  footer .top-ctr .top-lft {
+    width: 65%;
+  }
+  footer .top-ctr .top-rt {
+    width: 35%;
+    margin-top: 0;
+  }
+  footer .top-ctr .top-rt .form-inp {
+    padding-right: 50px;
+  }
 }
 
 /*****************

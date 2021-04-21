@@ -185,9 +185,8 @@ nav .menu:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 100vh;
 }
 
@@ -203,7 +202,7 @@ nav .menu:hover {
 
 .text {
   position: relative;
-  padding: 0 50px;
+  padding: 0;
   margin-top: 90px;
 }
 
@@ -252,6 +251,12 @@ p {
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
+}
+
+@media (min-width: 601px) {
+  .text {
+    padding: 0 50px;
+  }
 }
 
 @media (min-width: 991px) {
@@ -310,6 +315,7 @@ p {
   background-color: white;
   width: 80%;
   padding: 15px;
+  margin-top: 20px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 6px rgba(16, 16, 16, 0.1);
           box-shadow: 0px 0px 6px rgba(16, 16, 16, 0.1);
@@ -347,6 +353,7 @@ p {
 @media (min-width: 991px) {
   .options .option-des {
     width: 22%;
+    margin-top: 0;
   }
 }
 
@@ -387,7 +394,12 @@ p {
   margin-bottom: 40px;
 }
 
-@media (min-width: 991px) {
+.manager .img-ctr {
+  padding-top: 20px;
+  margin-bottom: -20px;
+}
+
+@media (min-width: 901px) {
   .manager .content-ctr {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -405,6 +417,13 @@ p {
 /**************
    SEC CENTRE
 **************/
+.sec-center {
+  padding-bottom: 0;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+
 .sec-center .text-ctr {
   text-align: center;
 }
@@ -419,12 +438,13 @@ p {
   margin-left: auto;
   margin-right: auto;
   color: #666666;
+  margin-top: 30px;
 }
 
 .sec-center .video-ctr {
   text-align: center;
   margin-bottom: 0px;
-  margin-top: 40px;
+  margin-top: 80px;
   /*
         padding: 0 auto;
 
@@ -453,8 +473,12 @@ p {
 }
 
 @media (min-width: 991px) {
+  .sec-center {
+    padding-bottom: 60px;
+  }
   .video-ctr {
     padding: 0 150px;
+    margin-top: 40px;
   }
   .sec-video {
     min-height: 540px;
@@ -465,8 +489,10 @@ p {
      DEMO
 **************/
 .demo {
-  height: 75vh !important;
-  padding: 60px 0 0 0;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  padding: 60px 0;
 }
 
 .demo-ctr {
@@ -538,6 +564,9 @@ p {
 }
 
 @media (min-width: 601px) {
+  .demo {
+    padding-top: 60px;
+  }
   .demo-ctr {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -557,7 +586,7 @@ p {
     TRUST
 *************/
 .trust {
-  margin: 0px 0 60px 0;
+  margin: 20px 0 60px 0;
   padding-top: 0;
 }
 
@@ -570,6 +599,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -582,8 +615,8 @@ p {
 }
 
 .trust .ctr-txt {
-  width: 55%;
   padding-top: 80px;
+  text-align: center;
 }
 
 .trust .ctr-txt h4 {
@@ -601,12 +634,34 @@ p {
 }
 
 .trust .ctr-img {
-  width: 40%;
   text-align: center;
 }
 
 .trust .ctr-img .certs {
-  width: 100%;
+  width: 60%;
+  margin: 15px 0;
+}
+
+@media (min-width: 801px) {
+  .trust {
+    margin-top: 45px;
+  }
+  .trust .trust-ctr {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .trust .trust-ctr .ctr-txt {
+    width: 55%;
+    text-align: left;
+  }
+  .trust .trust-ctr .ctr-img {
+    width: 40%;
+  }
+  .trust .trust-ctr .ctr-img .certs {
+    width: 100%;
+  }
 }
 
 footer {
@@ -662,7 +717,7 @@ footer .top-ctr p {
 }
 
 footer .top-ctr .top-lft {
-  width: 65%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -673,7 +728,7 @@ footer .top-ctr .top-lft .top-menu {
 }
 
 footer .top-ctr .top-rt {
-  width: 35%;
+  margin-top: 20px;
 }
 
 footer .top-ctr .top-rt .rt-content {
@@ -690,7 +745,7 @@ footer .top-ctr .top-rt input {
 }
 
 footer .top-ctr .top-rt .form-inp {
-  padding: 5px 62px 5px 6px;
+  padding: 5px 32px 5px 6px;
   background-color: black;
   border: 2px solid white;
   color: white;
@@ -748,6 +803,25 @@ footer .btm-ctr a {
   font-weight: 530;
   text-decoration: none;
   padding-left: 20px;
+}
+
+@media (min-width: 651px) {
+  footer .top-ctr {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .top-ctr .top-lft {
+    width: 65%;
+  }
+  footer .top-ctr .top-rt {
+    width: 35%;
+    margin-top: 0;
+  }
+  footer .top-ctr .top-rt .form-inp {
+    padding-right: 50px;
+  }
 }
 
 /*****************
