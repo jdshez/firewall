@@ -712,6 +712,10 @@ footer .top-ctr ul li a {
   color: white;
 }
 
+footer .top-ctr ul li a:hover {
+  color: #f36e21;
+}
+
 footer .top-ctr p {
   font-size: 11px;
 }
@@ -805,6 +809,10 @@ footer .btm-ctr a {
   padding-left: 20px;
 }
 
+footer .btm-ctr a:hover {
+  color: #f36e21;
+}
+
 @media (min-width: 651px) {
   footer .top-ctr {
     -webkit-box-orient: horizontal;
@@ -883,6 +891,10 @@ footer .btm-ctr a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
@@ -906,30 +918,6 @@ footer .btm-ctr a {
 }
 
 .main-ct form ul .email {
-  width: 100%;
-}
-
-.main-ct form ul .fname {
-  width: 100%;
-}
-
-.main-ct form ul .lname {
-  width: 100%;
-}
-
-.main-ct form ul .country {
-  width: 100%;
-}
-
-.main-ct form ul .pcode {
-  width: 100%;
-}
-
-.main-ct form ul .company {
-  width: 100%;
-}
-
-.main-ct form ul .phone {
   width: 100%;
 }
 
@@ -1002,38 +990,47 @@ footer .btm-ctr a {
   color: #666666;
 }
 
-@media (min-width: 991px) {
-  .main-ctr {
+@media (min-width: 601px) {
+  .main-ct .form-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .main-ctr form {
+  .main-ct .fname {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .main-ct .lname {
+    width: 48%;
+  }
+  .main-ct .country {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .main-ct .pcode {
+    width: 48%;
+  }
+  .main-ct .company {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .main-ct .phone {
+    width: 48%;
+  }
+}
+
+@media (min-width: 801px) {
+  .main-ct {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-ct form {
     width: 65%;
   }
-  .main-ctr .fname {
-    width: 48%;
-    margin-right: 4%;
-  }
-  .main-ctr .lname {
-    width: 48%;
-  }
-  .main-ctr .country {
-    width: 48%;
-    margin-right: 4%;
-  }
-  .main-ctr .pcode {
-    width: 48%;
-  }
-  .main-ctr .company {
-    width: 48%;
-    margin-right: 4%;
-  }
-  .main-ctr .phone {
-    width: 48%;
-  }
-  .main-ctr .icons {
+  .main-ct .icons {
     width: 30%;
   }
 }

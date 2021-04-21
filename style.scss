@@ -644,6 +644,9 @@ footer {
                     color:white;
                 }
             }
+            li a:hover{
+                color:#f36e21;
+            }
         }
 
         p {
@@ -723,6 +726,9 @@ footer {
             text-decoration: none;
             padding-left:20px;
         }
+        a:hover{
+            color:#f36e21;
+        }
     }
 
     @media (min-width: 651px) {
@@ -788,6 +794,7 @@ footer {
         margin-right: 2em;
             ul {
                 display:flex;
+                flex-direction: column;
                 flex-wrap: wrap;
                 list-style: none;
                 
@@ -812,24 +819,24 @@ footer {
                     width: 100%;
                 }
                 .fname {
-                    width: 100%;
+                    //width: 100%;
                 }
                 .lname{
-                    width: 100%;
+                    //width: 100%;
                 }
                 .country {
-                    width: 100%;
+                    //width: 100%;
                     
                 }
                 .pcode {
-                    width: 100%;
+                    //width: 100%;
                 }
                 .company {
-                    width: 100%;
+                    //width: 100%;
                     
                 }
                 .phone {
-                    width: 100%;
+                    //width: 100%;
                 }
                 .comment {
                     width: 100%;
@@ -896,42 +903,52 @@ footer {
             }
         }
     }
-}
-@media (min-width: 991px) {
-    .main-ctr{
-        flex-direction: row;
+    @media (min-width: 601px) {
+        .form-list {
+            flex-direction: row;
+        }   
+    
+            form {
+                //width: 65%;
+            }
+            .fname {
+                width: 48%;
+                margin-right: 4%;
+            }
+            .lname{
+                width: 48%;
+            }
+            .country {
+                width: 48%;
+                margin-right: 4%;
+            }
+            .pcode {
+                width: 48%;
+            }
+            .company {
+                width: 48%;
+                margin-right: 4%;
+            }
+            .phone {
+                width: 48%;
+            }
         
+            .icons {
+                //width:30%;
+            }   
+    }
+    @media (min-width: 801px) {
+        flex-direction: row;
 
         form {
             width: 65%;
         }
-        .fname {
-            width: 48%;
-            margin-right: 4%;
-        }
-        .lname{
-            width: 48%;
-        }
-        .country {
-            width: 48%;
-            margin-right: 4%;
-        }
-        .pcode {
-            width: 48%;
-        }
-        .company {
-            width: 48%;
-            margin-right: 4%;
-        }
-        .phone {
-            width: 48%;
-        }
-    
         .icons {
             width:30%;
         }
-    }
+    } 
 }
+
 
 
 

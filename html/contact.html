@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SonicWall </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://use.fontawesome.com/77a33ae965.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script src="../index.js"></script>
 </head>
 <body>
     <div id="myNav" class="nav-overlay">
         <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
         <ul class="nav-list">
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Demo</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Sales</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="contact.html">Sales</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="support.html">Support</a></li>
         </ul>
     </div>
 
@@ -79,7 +80,7 @@
         <div class="icons">
             <ul>
                 <li>
-                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                    <div class="icon icon-1"><i class="fa fa-phone" aria-hidden="true"></i>
                     </div>
                     <div class="detail">
                         <h5>SUPPORT</h5>
@@ -87,7 +88,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="icon"><i class="fa fa-shield" aria-hidden="true"></i>
+                    <div class="icon icon-2"><i class="fa fa-shield" aria-hidden="true"></i>
                     </div>
                     <div class="detail">
                         <h5>DEMO</h5>
@@ -95,7 +96,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="icon"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></div>
+                    <div class="icon icon-3"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></div>
                     <div class="detail">
                         <h5>OTHER INQUIRIES</h5>
                         <p>Call +1-888-557-6642</p>
@@ -178,6 +179,21 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+        let tl = gsap.timeline();
+        tl.from(".icon-1", {
+            opacity: 0,
+            scale: 0,
+            duration:1
+        }).from(".icon-2", {
+            opacity: 0,
+            scale: 0,
+            duration:1
+        }, '-=.5').from(".icon-3", {
+            opacity: 0,
+            scale: 0,
+            duration:1
+        }, '-=.5');
+    </script>
 </body>
 </html>
