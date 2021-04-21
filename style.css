@@ -326,7 +326,9 @@ p {
 }
 
 .options .option-des .img-ctr {
-  min-height: 150px;
+  min-height: 195px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .options .option-des:hover {
@@ -423,15 +425,20 @@ p {
   text-align: center;
   margin-bottom: 0px;
   margin-top: 40px;
-  padding: 0 auto;
-}
+  /*
+        padding: 0 auto;
 
-.sec-center .video-ctr .frame-ctr {
-  width: 100%;
-}
+        .frame-ctr{
+            width: 100%;
+            //margin-left: auto;
+            //margin-right: auto;
+        }
+        .sec-video {
+           // min-height:540px;
+            width:85%;
 
-.sec-center .video-ctr .sec-video {
-  width: 85%;
+        }*/
+  aspect-ratio: 16 / 9;
 }
 
 @media (min-width: 601px) {
@@ -786,12 +793,14 @@ footer .btm-ctr a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-ct form {
-  width: 65%;
+  width: 100%;
   padding-right: 20px;
   margin-right: 2em;
 }
@@ -827,30 +836,27 @@ footer .btm-ctr a {
 }
 
 .main-ct form ul .fname {
-  width: 48%;
-  margin-right: 4%;
+  width: 100%;
 }
 
 .main-ct form ul .lname {
-  width: 48%;
+  width: 100%;
 }
 
 .main-ct form ul .country {
-  width: 48%;
-  margin-right: 4%;
+  width: 100%;
 }
 
 .main-ct form ul .pcode {
-  width: 48%;
+  width: 100%;
 }
 
 .main-ct form ul .company {
-  width: 48%;
-  margin-right: 4%;
+  width: 100%;
 }
 
 .main-ct form ul .phone {
-  width: 48%;
+  width: 100%;
 }
 
 .main-ct form ul .comment {
@@ -878,7 +884,8 @@ footer .btm-ctr a {
 }
 
 .main-ct .icons {
-  width: 30%;
+  width: 100%;
+  margin-top: 60px;
 }
 
 .main-ct .icons ul {
@@ -919,6 +926,42 @@ footer .btm-ctr a {
 
 .main-ct .icons ul p {
   color: #666666;
+}
+
+@media (min-width: 991px) {
+  .main-ctr {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-ctr form {
+    width: 65%;
+  }
+  .main-ctr .fname {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .main-ctr .lname {
+    width: 48%;
+  }
+  .main-ctr .country {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .main-ctr .pcode {
+    width: 48%;
+  }
+  .main-ctr .company {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .main-ctr .phone {
+    width: 48%;
+  }
+  .main-ctr .icons {
+    width: 30%;
+  }
 }
 
 /*********************

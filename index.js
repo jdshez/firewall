@@ -12,7 +12,7 @@ function closeNav() {
 
 
 
-
+console.log('hi');
 
 
 
@@ -26,18 +26,7 @@ function closeNav() {
       });
   });*/
 
-  let t1 = gsap.timeline({
-      scrollTrigger: {
-          trigger: '.virt-fw',
-          start: "top top"
-      }
-  });
 
-  t1.from(".an-h4", {
-      x:200,
-      opacity:0,
-      duration:1.5    
-  })
 //transform: scale(10),
 
 

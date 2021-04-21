@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SonicWall Firewalls</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js" integrity="sha512-0bzaetZStCnsUgbCtGVxftzF/L32PNOnrMlYLXwBOKl8cUjTSSDfJVyyJsNwGoI0iE0WUqni2eEfO35kJjFj5g==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <div id="myNav" class="nav-overlay">
@@ -220,5 +221,53 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    let t1 = gsap.timeline({
+        scrollTrigger: {
+        trigger: '.virt-fw',
+        start: "middle top"
+      }
+    });
+
+  t1.from(".an-h4", {
+      
+      opacity:0,
+      duration:1.2    
+  }).from(".manager .text-ctr", {
+      y:300,
+      opacity:0,
+      duration:1.5 
+  }, '-=1').from(".manager .img-ctr", {
+      x:250,
+      opacity:0,
+      duration:1.5
+  }, '-=1.1');
+
+  let t2 = gsap.timeline({
+        scrollTrigger: {
+        trigger: '.demo ',
+        start: "top bottom"
+      }
+    });
+
+    t2.from(".demo-header", {
+        opacity:0,
+        duration:1.2
+    }).from(".demo-txt", {
+        x:-200,
+        opacity:0,
+        duration:1.
+    }, '-=1').from(".demo-txt-ctr .btn", {
+        x:-200,
+        opacity:0,
+        duration:1.
+    }, '-=1').from(".demo-img-ctr", {
+        y:-200,
+        opacity:0,
+        duration:1.5
+    }, '-=0.5');
+
+    </script>
 </body>
 </html>

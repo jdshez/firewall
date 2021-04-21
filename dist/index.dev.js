@@ -10,6 +10,8 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+
+console.log('hi');
 /*$(window).scroll(function() {
     var scroll = $(window).scrollTop();
       $(".zoom img").css({
@@ -19,19 +21,7 @@ function closeNav() {
           filter: "blur(" + (scroll/200) + "px)"
       });
   });*/
-
-
-var t1 = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.virt-fw',
-    start: "top top"
-  }
-});
-t1.from(".an-h4", {
-  x: 200,
-  opacity: 0,
-  duration: 1.5
-}); //transform: scale(10),
+//transform: scale(10),
 
 /*
 function animations() {
