@@ -865,3 +865,39 @@ footer .btm-ctr a:hover {
     margin-right: 5%;
   }
 }
+/************
+   SUPPORT
+************/
+.alert {
+  margin: 4rem;
+}
+.alert .alerts-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f36e21;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 0.5rem;
+}
+.alert .alerts-header .a-link {
+  text-decoration: none;
+  color: white;
+}
+.alert .al-body {
+  background-color: #ebebeb;
+  padding: 1px 1rem;
+}
+.alert .al-body .a-des {
+  color: black;
+}
+.alert .al-body .al-link {
+  color: #f36e21;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .alert {
+    margin: 4rem 1rem;
+  }
+}
