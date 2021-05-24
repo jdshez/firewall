@@ -757,11 +757,21 @@ footer .btm-ctr a:hover {
 }
 .main-ct .icons ul .icon i {
   color: #f36e21;
+  width: 80px;
   font-size: 40px;
   padding: 20px;
   background-color: #f4f4f4;
   border: 2px solid #f36e21;
   border-radius: 100%;
+}
+.main-ct .icons ul .icon-1 i {
+  padding-left: 23px;
+}
+.main-ct .icons ul .icon-2 i {
+  padding-left: 23px;
+}
+.main-ct .icons ul .icon-3 i {
+  padding-left: 23px;
 }
 .main-ct .icons ul h5 {
   color: #f36e21;
@@ -828,6 +838,10 @@ footer .btm-ctr a:hover {
 }
 .ld-form .form-list li {
   width: 100%;
+  margin-right: 0;
+}
+.ld-form .btn-ctr {
+  margin-bottom: 2rem;
 }
 
 .ld-options {
@@ -864,12 +878,15 @@ footer .btm-ctr a:hover {
     width: 48%;
     margin-right: 5%;
   }
+  .main-ct .ld-form .btn-ctr {
+    margin-bottom: 0;
+  }
 }
 /************
    SUPPORT
 ************/
 .alert {
-  margin: 4rem;
+  margin: 4rem 1rem;
 }
 .alert .alerts-header {
   display: flex;
@@ -896,8 +913,127 @@ footer .btm-ctr a:hover {
   text-decoration: none;
 }
 
-@media (max-width: 480px) {
+.support-options {
+  padding: 3.5rem;
+  background-color: #f0f0f0;
+}
+
+.s-options-ctr {
+  max-width: 990px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.s-options-ctr .opt {
+  width: 100%;
+  text-align: center;
+}
+.s-options-ctr .opt a {
+  text-decoration: none;
+}
+.s-options-ctr .opt a .opt-icon {
+  font-size: 3rem;
+  color: #636466;
+}
+.s-options-ctr .opt a .opt-title p {
+  color: #f36e21;
+}
+
+.support-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 4rem;
+}
+.support-links .left-links li .detail {
+  text-align: right;
+}
+.support-links .left-links, .support-links .right-links {
+  width: 100%;
+}
+.support-links .left-links ul, .support-links .right-links ul {
+  list-style: none;
+}
+.support-links .left-links ul li, .support-links .right-links ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.support-links .left-links ul li .detail, .support-links .right-links ul li .detail {
+  flex-basis: 75%;
+}
+.support-links .left-links ul li .detail h5, .support-links .right-links ul li .detail h5 {
+  color: #f36e21;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.support-links .left-links ul li .detail p, .support-links .right-links ul li .detail p {
+  color: #858585;
+}
+.support-links .left-links ul li .detail a, .support-links .right-links ul li .detail a {
+  color: #f36e21;
+}
+.support-links .left-links ul li .icon, .support-links .right-links ul li .icon {
+  flex-basis: 20%;
+}
+.support-links .left-links ul li .icon i, .support-links .right-links ul li .icon i {
+  width: 80px;
+  color: #f36e21;
+  font-size: 35px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 2px solid #f36e21;
+  border-radius: 100%;
+}
+.support-links .left-links ul li .icon-1 i, .support-links .right-links ul li .icon-1 i {
+  padding-left: 26px;
+}
+.support-links .left-links ul li .icon-2 i, .support-links .right-links ul li .icon-2 i {
+  padding-left: 17px;
+}
+.support-links .left-links ul li .icon-3 i, .support-links .right-links ul li .icon-3 i {
+  padding-left: 21.5px;
+}
+.support-links .left-links ul li .icon-4 i, .support-links .right-links ul li .icon-4 i {
+  padding-left: 25.5px;
+}
+.support-links .left-links ul li .icon-5 i, .support-links .right-links ul li .icon-5 i {
+  padding-left: 20px;
+}
+.support-links .left-links ul li .icon-6 i, .support-links .right-links ul li .icon-6 i {
+  padding-left: 23px;
+}
+
+@media (min-width: 600px) {
   .alert {
-    margin: 4rem 1rem;
+    margin: 4rem;
+  }
+
+  .s-options-ctr {
+    flex-direction: row;
+  }
+  .s-options-ctr .opt {
+    width: 50%;
+  }
+}
+@media (min-width: 808px) {
+  .support-options .opt {
+    flex-basis: 20%;
+  }
+
+  .support-links {
+    flex-direction: row;
+  }
+  .support-links .left-links {
+    width: 47.5%;
+  }
+  .support-links .left-links .icon {
+    margin-left: 1rem;
+  }
+  .support-links .right-links {
+    width: 47.5%;
+  }
+  .support-links .right-links .icon {
+    margin-right: 1rem;
   }
 }

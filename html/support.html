@@ -7,21 +7,21 @@
     <title>SonicWall</title>
     <link rel="stylesheet" href="../style.css">
     <script src="https://use.fontawesome.com/77a33ae965.js"></script>
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
 </head>
 <body>
     <div id="myNav" class="nav-overlay">
         <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
         <ul class="nav-list">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="html/contact.html">Sales</a></li>
-            <li><a href="html/demo.html">Demo</a></li>
-            <li><a href="html/support.html">Support</a></li>
+            <li><a href="./contact.html">Sales</a></li>
+            <li><a href="./demo.html">Demo</a></li>
+            <li><a href="./support.html">Support</a></li>
         </ul>
     </div>
 
     <nav class="nav">
-        <a class="logo" ref="#">
+        <a class="logo" href="../index.html">
             <img src="https://d3ik27cqx8s5ub.cloudfront.net/bt/img/Logo.svg" alt="company logo">
         </a>
         <div class="menu" onclick="openNav()">
@@ -61,38 +61,46 @@
     <div class="support-options">
         <div class="s-options-ctr">
             <div class="opt">
-                <div class="opt-icon">
-                    <i class="fa fa-book" aria-hidden="true"></i>
-                </div>
-                <div class="opt-title">
-                    <p>Technical
-                        Documentation</p>
-                </div>
+                <a href="#">
+                    <div class="opt-icon">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </div>
+                    <div class="opt-title">
+                        <p>Technical
+                            Documentation</p>
+                    </div>
+                </a>
             </div>
             <div class="opt">
-                <div class="opt-icon">
-                    <i class="fa fa-table" aria-hidden="true"></i>
-                </div>
-                <div class="opt-title">
-                    <p>Product Life Cycle
-                        Tables</p>
-                </div>
+                <a href="#">
+                    <div class="opt-icon">
+                        <i class="fa fa-table" aria-hidden="true"></i>
+                    </div>
+                    <div class="opt-title">
+                        <p>Product Life Cycle
+                            Tables</p>
+                    </div>
+                </a>
             </div>
             <div class="opt">
-                <div class="opt-icon">
-                    <i class="fa fa-users" aria-hidden="true"></i>
-                </div>
-                <div class="opt-title">
-                    <p>SonicWall Community</p>
-                </div>
+                <a href="#">
+                    <div class="opt-icon">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div class="opt-title">
+                        <p>SonicWall Community</p>
+                    </div>
+                </a>
             </div>
             <div class="opt">
-                <div class="opt-icon">
-                    <i class="fa fa-video-camera" aria-hidden="true"></i>  
-                </div>
-                <div class="opt-title">
-                    <p>Video Tutorials</p>
-                </div>
+                <a href="#">
+                    <div class="opt-icon">
+                        <i class="fa fa-video-camera" aria-hidden="true"></i>  
+                    </div>
+                    <div class="opt-title">
+                        <p>Video Tutorials</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -114,16 +122,16 @@
                         <p>Obtain a quote or renew a support contract</p>
                         <span><a href="#" class="learn-link">Learn More></a></span>
                     </div>
-                    <div class="icon icon-1"><i class="fa fa-handshake-o" aria-hidden="true"></i>
+                    <div class="icon icon-2"><i class="fa fa-handshake-o" aria-hidden="true"></i>
                     </div>
                 </li>
                 <li>
-                    <div class="icon icon-1"><i class="fa fa-life-ring" aria-hidden="true"></i>
-                    </div>
                     <div class="detail">
                         <h5>SUPPORT SERVICES</h5>
                         <p>Review our support offerings and policies here</p>
                         <span><a href="#" class="learn-link">Learn More></a></span>
+                    </div>
+                    <div class="icon icon-3"><i class="fa fa-life-ring" aria-hidden="true"></i>
                     </div>
                 </li>
             </ul>
@@ -132,26 +140,26 @@
         <div class="right-links">
             <ul>
                 <li>
+                    <div class="icon icon-4"><i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
                     <div class="detail">
                         <h5>MY SONICWALL</h5>
                         <p>Manage licenses, service, software and firmware</p>
                         <span><a href="#" class="learn-link">Learn More></a></span>
                     </div>
-                    <div class="icon icon-1"><i class="fa fa-user" aria-hidden="true"></i>
-                    </div>
                 </li>
                 <li>
-                    <div class="icon icon-1"><i class="fa fa-list-alt" aria-hidden="true"></i>
+                    <div class="icon icon-5"><i class="fa fa-list-alt" aria-hidden="true"></i>
                     </div>
                     <div class="detail">
                         <h5>REPORT AN ISSUE</h5>
-                        <p>Report a potential security vulnerability or submit virus/malware samples</p>
+                        <p>Report a potential security vulnerability or submit a virus</p>
                         <span><a href="#" class="learn-link">Learn More></a></span>
                     </div>
                 </li>
                 
                 <li>
-                    <div class="icon icon-1"><i class="fa fa-certificate" aria-hidden="true"></i>
+                    <div class="icon icon-6"><i class="fa fa-certificate" aria-hidden="true"></i>
                     </div>
                     <div class="detail">
                         <h5>CERTIFICATION</h5>
@@ -162,6 +170,78 @@
             </ul>
         </div>
     </div>
-
+    <footer>
+        <div class="ft-ctr">
+            <div class="ft-top">
+                <div class="top-ctr">
+                    <div class="top-lft">
+                        <div class="top-menu">
+                            <h6>COMPANY</h6>
+                            <ul>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Leadership</a></li>
+                                <li><a href="#">Awards</a></li>
+                                <li><a href="#">Press Kit</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="top-menu">
+                            <h6>RESOURCES</h6>
+                            <ul>
+                                <li><a href="#">Communities</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">SonicWall Capture Labs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="top-rt">
+                        <div class="rt-content">
+                            <ul>
+                                <li><h6>Stay In Touch</h6></li>
+                                <li>
+                                    <form class="ft-form" action="">
+                                        <input class="form-inp" type="email" placeholder="Email Address"><input class="form-btn" type="submit" value="&#10132;">
+                                    </form>
+                                </li>
+                                <li>
+                                    <p>
+                                        By submitting this form, you agree to our Terms of Use and acknowledge our Privacy Statement. You can unsubscribe at any time at Manage Subscriptions.
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="social">
+                                <div class="icon-ctr">
+                                    <a href="" class="social-icon"><img src="/img/pinterest-32.png" alt=""></a>
+                                </div>
+                                <div class="icon-ctr">
+                                    <a href="" class="social-icon"><img src="/img/instagram-32.png" alt=""></a>
+                                </div>
+                                <div class="icon-ctr">
+                                    <a href="" class="social-icon"><img src="/img/linkedin-6-32.png" alt=""></a>
+                                </div>
+                                <div class="icon-ctr">
+                                    <a href="" class="social-icon"><img src="/img/twitter-32.png" alt=""></a>
+                                </div>
+                                <div class="icon-ctr">
+                                    <a href="" class="social-icon"><img src="/img/facebook-32.png" alt=""></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-btm">
+                <div class="btm-ctr">
+                    <p>© 2021 SonicWall. All Rights Reserved.</p>
+                    <div class="l-p">
+                        <a href="#">Legal</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
